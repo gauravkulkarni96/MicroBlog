@@ -8,8 +8,8 @@ To run the MicroBlog:<br>
 4. <code>python server.py</code><br>
 
 Some Screenshots: <br>
-<img src="/microscr/home.png"><br><br>
-<img src="/microscr/loggedin.png"><br><br>
-<img src="/microscr/newpost.png"><br><br>
-<img src="/microscr/interface.png"><br><br>
-<img src="/microscr/search.png"><br><br>
+<img height=70% width=70% src="/microscr/home.png"><br><br>
+<img height=70% width=70% src="/microscr/loggedin.png"><br><br>
+<img height=70% width=70% src="/microscr/newpost.png"><br><br>
+<img height=70% width=70% src="/microscr/interface.png"><br><br>
+<img height=70% width=70% src="/microscr/search.png"><br><br>
