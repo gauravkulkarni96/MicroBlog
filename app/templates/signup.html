@@ -1,0 +1,25 @@
+<style>
+	.custom{
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+</style>
+		<div align="center" class="container">
+		<br><br><br><br><br><br><br><br>
+		<h3>&nbspSignup to explore the art of MicroBlogging.</h3>
+		<br><br><br>
+		{% if error %}
+      	<p><h5 style="color:red;">{{ error }}</h5></p>
+      	{% endif %}
+		<form action="/signup" method="post">
+		<input class="custom" type="text"  placeholder ="username" name="username"/><br>
+		<input class="custom" type="password"  placeholder ="password" name="password"/><br><br>
+		<input class="btn btn-info btn-lg" type="submit" value="signup"/>
+		</form>
+		</div>
+<br><br><br><br>

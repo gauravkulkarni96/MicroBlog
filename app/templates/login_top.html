@@ -1,0 +1,13 @@
+<div class="container">
+		{%block login %}
+		{% if username %}
+		 <h4 style="color:white">Welcome! {{username}}<a style="padding-left:5em" href="/logout">Logout</a></h4>
+		{% else %}
+		<form action="/login" method="post">
+		<input type="text"  placeholder ="username" name="username"/>
+		<input type="password"  placeholder ="password" name="password"/>
+		<input style="color:white; background:#5bc0de; border-radius:2px; border:none; height:26px; width: 60px " type="submit" value="Login"/>
+		</form>
+		{% endif %}
+		{% endblock%}
+</div>

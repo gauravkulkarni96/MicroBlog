@@ -1,0 +1,15 @@
+<p>
+	{% if all_posts %}
+	{% for posts in all_posts %}
+	<p>
+	<div class="blog-post container-lef">
+		<h2 class="blog-post-title">{{ posts.title }}</h2>
+		<p class="blog-post-meta">{{ posts.date }}</p>
+		<p style="margin-left:10px;"> {{ posts.post }}</p>
+		</div>
+	</p>
+	{% endfor %}
+	{% else %}
+	<div class="blog-post container-lef"><p><h2>No posts to show</h2></p></div>
+	{% endif %}
+</p>

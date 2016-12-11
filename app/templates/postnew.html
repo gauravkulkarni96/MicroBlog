@@ -1,0 +1,65 @@
+<div>
+<style>
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=date], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=time], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+</style>
+
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">New Post</button>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h3 class="modal-title">Create Post</h3>
+      </div>
+      <div class="modal-body">
+        <p><form method="post" action="/post-new">
+        <div>
+          <h4> Title</h4> <input type="text" name="title" placeholder="Enter post title here"><br>
+		  <h4> Post </h4><textarea rows="4" cols="69" name="post" placeholder="Enter post here"></textarea> <!-- <input type="text" name="post" placeholder="Enter post here" style="height:80px"> --><br>
+		  <h4> Tags </h4><input type="text" name="tags" placeholder="Tags"><br>
+		  <h4> Date </h4><input type="date" name="date" placeholder="Date"><br>
+		  <h4> Time </h4><input type="time" name="time" placeholder="Time"><br>
+          <input class="btn btn-info btn-lg" type="submit" value="Save">
+        </div>
+      </form></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+</div>
