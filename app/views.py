@@ -28,7 +28,7 @@ def login():
         username = request.form['username']
         password = request.form['password']
         user = login_data.query.filter_by(username=username).first()
-        if user.password == password:
+        if user and user.password == password:
             session['logged_in']=username
             session['user_id']=user.user_id
             session['username']=user.username
@@ -57,6 +57,7 @@ def signup():
             error="Username Already exists"
         else:
             db.session.add(user)
+            db.session.commit()
     return render_template("base.html",error=error)
 #    return redirect(url_for('home',error=error))
 
