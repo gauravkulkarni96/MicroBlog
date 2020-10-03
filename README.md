@@ -1,3 +1,6 @@
+[![DeepSource](https://deepsource.io/gh/gauravkulkarni96/MicroBlog.svg/?label=resolved+issues&show_trend=true)](https://deepsource.io/gh/gauravkulkarni96/MicroBlog/?ref=repository-badge)
+[![DeepSource](https://deepsource.io/gh/gauravkulkarni96/MicroBlog.svg/?label=active+issues&show_trend=true)](https://deepsource.io/gh/gauravkulkarni96/MicroBlog/?ref=repository-badge)
+
 # MicroBlog
 Live Version : https://microblog96.herokuapp.com/
 <br>Adaptation of Miguel Grinberg's microblog developed using Python and Flask framework.
