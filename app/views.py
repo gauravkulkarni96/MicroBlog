@@ -1,10 +1,7 @@
 from functools import wraps
 from app import app
-from flask import (send_from_directory,session,g,
-                   Flask,render_template, redirect, 
-                   request, url_for, flash)
-import config
-from flask_login import current_user
+from flask import (session,render_template, redirect, 
+                   request, url_for)
 from models import db, login_data, post_data
 
 @app.route("/")
