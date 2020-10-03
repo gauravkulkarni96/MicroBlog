@@ -17,8 +17,7 @@ def login_required(f):
     def temp(*args, **kwargs):
         if 'logged_in' in session:
             return f(*args, **kwargs)
-        else:
-            return redirect(url_for('login'))
+        return redirect(url_for('login'))
     return temp
 
 @app.route("/login", methods=['POST','GET'])
@@ -44,8 +43,7 @@ def user(username):
     if username == session['logged_in']:
         all_posts = show_post()
         return render_template('user.html',all_posts=all_posts, username = username)
-    else:
-        return redirect(url_for('error404'))
+    return redirect(url_for('error404'))
 
 @app.route('/signup', methods=['POST','GET'])
 def signup():
